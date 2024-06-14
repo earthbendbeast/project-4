@@ -4,6 +4,7 @@ let cells = ["", "", "", "", "", "", "", "", ""];
 let currentPlayer = "X";
 let gameActive = true;
 
+// makes it so that it displays the right winner, loser or draw.
 function handleCellClick(index) {
   if (cells[index] !== "" || !gameActive) return;
 
@@ -21,6 +22,7 @@ function handleCellClick(index) {
   }
 }
 
+// returns cells in the right spots and sets up the winning combinations of x'es and o'es
 function checkWinner() {
   const winningCombinations = [
     [0, 1, 2],
@@ -38,6 +40,7 @@ function checkWinner() {
   });
 }
 
+// this function renders the board
 function renderBoard() {
   board.innerHTML = "";
   cells.forEach((cell, index) => {
