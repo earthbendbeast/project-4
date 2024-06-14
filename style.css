@@ -6,8 +6,7 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
-    background-color: yellow;
-}
+    background-color: #288521;}
 #board {
     display: grid;
     grid-template-columns: repeat(3, 100px);
@@ -21,7 +20,7 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 2em;
-    background-color: #eee;
+    background-color: darkgreen;
     cursor: pointer;
 }
 .cell:hover {
