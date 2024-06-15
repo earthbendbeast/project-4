@@ -5,7 +5,7 @@ let selectedWord = words[Math.floor(Math.random() * words.length)];
 let displayedWord = Array(selectedWord.length).fill("_");
 let guessedLetters = [];
 let remainingAttempts = 6;
-
+// 
 function render() {
   document.getElementById("word").textContent = displayedWord.join(" ");
   document.getElementById(
