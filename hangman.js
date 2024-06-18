@@ -5,6 +5,7 @@ let selectedWord = words[Math.floor(Math.random() * words.length)];
 let displayedWord = Array(selectedWord.length).fill("_");
 let guessedLetters = [];
 let remainingAttempts = 6;
+
 // renders the entire game
 function render() {
   document.getElementById("word").textContent = displayedWord.join(" ");
@@ -15,6 +16,7 @@ function render() {
     "remaining-attempts"
   ).textContent = `Remaining Attempts: ${remainingAttempts}`;
 }
+
 // allows you to guess the letters
 function guessLetter() {
   const letterInput = document.getElementById("letter");
