@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Game Website</title>
   </head>
+  <?php
+  include "inc/header.php";
+  ?>
   <body>
     <h1>Welcome to the Game Studio</h1>
     <p>Click the link below to play a Tic-Tac-Toe game:</p>
